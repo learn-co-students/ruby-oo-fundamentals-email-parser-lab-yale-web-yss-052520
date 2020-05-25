@@ -27,6 +27,7 @@ class EmailAddressParser
                 arr3.push(elt)
             end 
         end 
+        puts arr3
         return arr3 
     end 
 end 
@@ -40,4 +41,6 @@ def out?(elt, array)
     return true 
 end 
 
-EmailAddressParser.new("avi@test.com arel@test.com").parse
+#EmailAddressParser.new("avi@test.com arel@test.com").parse
+test = "avi@test.com, bavi@test.com aavi@test.com , cavi@test.com  ,davi@test.com"
+EmailAddressParser.new(test).parse
