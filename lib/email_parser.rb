@@ -15,7 +15,6 @@ class EmailAddressParser
     def parse 
         if @string_of_emails.split(",") == [@string_of_emails]  
             arr = @string_of_emails.split(' ') 
-            puts arr 
             return arr 
         end 
         arr = @string_of_emails.split(",") 
